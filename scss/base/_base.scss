@@ -1,0 +1,43 @@
+body{
+	font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
+    font-family: "proxima-nova";
+    font-size: 14px;
+    line-height: 1.75em;
+    text-transform: none;
+    letter-spacing: 0px;
+    font-weight: 400;
+    font-style: normal;
+    color: rgba(17,17,17,.6);
+}
+
+#canvas{
+	height: 100%;
+	position: relative;
+    z-index: 2;
+    background: #fff;
+    -moz-osx-font-smoothing: auto;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-left: 250px;
+}
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+    background: #242628;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
